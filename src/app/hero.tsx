@@ -2,7 +2,22 @@
 
 import Image from "next/image";
 import { Input, Button, Typography } from "@material-tailwind/react";
+import Link from "next/link";
 
+const SOCIALS = [
+  {
+    logo: "github",
+    title: "Github",
+    href: "https://github.com/renitreni",
+    textColor: "text-gray-900",
+  },
+  {
+    logo: "linkedin",
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/renier-trenuela-ii-33b4b9123/",
+    textColor: "text-blue-900",
+  },
+];
 function Hero() {
   return (
     <header className="bg-white p-8">
@@ -12,44 +27,48 @@ function Hero() {
             variant="h1"
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
+            placeholder={"undefined"}
           >
-            Welcome to my Web <br /> Development Portofolio!
+            Hi,my name is Renier <br /> Welcome to my Portofolio!
           </Typography>
           <Typography
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
+            placeholder={"undefined"}
           >
-            I&apos;m Lily Smith, a passionate web developer based in USA. Here,
-            you&apos;ll get a glimpse of my journey in the world of web
-            development, where creativity meets functionality.
+            With a passion for crafting seamless digital experiences, I leverage
+            the versatility and efficiency of Laravel to create dynamic web
+            applications that seamlessly integrate front-end and back-end
+            functionalities.
           </Typography>
-          <div className="grid">
-            <Typography
-              variant="small"
-              className="mb-2 text-gray-900 font-medium"
-            >
-              Your email
-            </Typography>
-            <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
-              {/* @ts-ignore */}
-              <Input color="gray" label="Enter your email" size="lg" />
-              <Button color="gray" className="w-full px-4 md:w-[12rem]">
-                require offer
-              </Button>
-            </div>
+          <div className="flex">
+            {SOCIALS.map((value, key) => (
+              <Typography
+                key={key}
+                variant="small"
+                className={"mb-2 font-medium mx-2"}
+                placeholder={"undefined"}
+              >
+                <a className="flex flex-row items-center" href={value.href} target="_blank">
+                  <Image
+                    key={key}
+                    alt={value.logo}
+                    width={32}
+                    height={32}
+                    className={`w-6 ${value.textColor}`}
+                    src={`/logos/logo-${value.logo}.svg`}
+                  />
+                  <span className="ml-2 font-sans font-bold">{value.title}</span>
+                </a>
+              </Typography>
+            ))}
           </div>
-          <Typography variant="small" className="font-normal !text-gray-500">
-            Read my{" "}
-            <a href="#" className="font-medium underline transition-colors">
-              Terms and Conditions
-            </a>
-          </Typography>
         </div>
         <Image
           width={1024}
           height={1024}
           alt="team work"
-          src="/image/image-7.svg"
+          src="/image/ins.jpg"
           className="h-[36rem] w-full rounded-xl object-cover"
         />
       </div>
