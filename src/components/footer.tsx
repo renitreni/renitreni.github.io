@@ -9,14 +9,7 @@ export function Footer() {
       <div className="container mx-auto">
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-between">
           <Typography placeholder={''} className="text-center font-normal !text-gray-700">
-            &copy; {CURRENT_YEAR} Made with{" "}
-            <a href="https://www.material-tailwind.com" target="_blank">
-              Material Tailwind
-            </a>{" "}
-            by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
-              Creative Tim
-            </a>
+            &copy; {CURRENT_YEAR} Made with
             .
           </Typography>
           <ul className="flex gap-8 items-center">

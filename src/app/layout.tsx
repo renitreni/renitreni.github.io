@@ -11,9 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js + Tailwind Portfolio Page",
+  title: "Renier's Portfolio",
   description:
-    "Introducing Tailwind Portfolio Page, a versatile and stylish portfolio template built on the foundation of Tailwind CSS and Material Tailwind.",
+    "With a passion for crafting seamless digital experiences, I leverage the versatility and efficiency of Laravel to create dynamic web applications that seamlessly integrate front-end and back-end functionalities.",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
       <head>
         <script
           defer
-          data-site="YOUR_DOMAIN_HERE"
+          data-site="renier.github.io"
           src="https://api.nepcha.com/js/nepcha-analytics.js"
         ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Layout>
           {children}
-          <FixedPlugin />
+          {/* <FixedPlugin /> */}
         </Layout>
       </body>
     </html>
