@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { useState } from "react";
 
-export default function DefaultDialog(param: { projectTitle: string }) {
+export default function DefaultDialog(param: { projectTitle: string, imgProject: string, descProject: string }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
 
@@ -19,7 +19,7 @@ export default function DefaultDialog(param: { projectTitle: string }) {
       <Dialog open={open} handler={handleOpen} placeholder={""}>
         <DialogHeader placeholder={""}>{param.projectTitle}</DialogHeader>
         <DialogBody placeholder={""}>
-          {param.projectTitle}
+          {param.descProject}
         </DialogBody>
         <DialogFooter placeholder={""}>
           <Button
@@ -29,15 +29,7 @@ export default function DefaultDialog(param: { projectTitle: string }) {
             onClick={handleOpen}
             className="mr-1"
           >
-            <span>Cancel</span>
-          </Button>
-          <Button
-            placeholder={""}
-            variant="gradient"
-            color="green"
-            onClick={handleOpen}
-          >
-            <span>Confirm</span>
+            <span>Close</span>
           </Button>
         </DialogFooter>
       </Dialog>

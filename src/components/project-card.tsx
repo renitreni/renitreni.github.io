@@ -44,9 +44,9 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
             className="mb-6 font-normal !text-gray-500"
             placeholder={"undefined"}
           >
-            {desc}
+            { desc.substring(0,120) }...
           </Typography>
-          <DefaultDialog projectTitle={title} />
+          <DefaultDialog projectTitle={title} imgProject={img} descProject={desc} />
         </CardBody>
       </Card>
     </>
