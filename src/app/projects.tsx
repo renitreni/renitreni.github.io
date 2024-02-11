@@ -34,8 +34,12 @@ const PROJECTS = [
     title: "Learning Management System (LMS)",
     desc: "Digital platform designed to revolutionize the way educational content is delivered, managed, and accessed by learners and instructors. It serves as a comprehensive solution for educational institutions, corporations, and training providers to streamline the administration, delivery, and tracking of learning activities and resources.",
   },
+  {
+    img: "/image/1-budget-pet.png",
+    title: "E-commerce",
+    desc: "An e-commerce website that focuses on pet products. These websites typically feature product listings, shopping cart functionality, secure payment processing, and often include additional features such as customer reviews, order tracking, and personalized recommendations.",
+  },
   // beauty books
-  // inventory system
 ];
 
 export function Projects() {
