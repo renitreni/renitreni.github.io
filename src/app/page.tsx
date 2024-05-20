@@ -3,6 +3,7 @@ import { Navbar, Footer } from "@/components";
 
 // sections
 import Hero from "./hero";
+import DevTools from "./dev-tools";
 import Clients from "./clients";
 import Skills from "./skills";
 import Projects from "./projects";
@@ -17,6 +18,7 @@ export default function Portfolio() {
       <Navbar />
       <Hero />
       {/* <Clients /> */}
+      <DevTools />
       <Skills />
       <Projects />
       <Resume />
