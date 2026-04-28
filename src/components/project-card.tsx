@@ -12,9 +12,10 @@ interface ProjectCardProps {
   img: string;
   title: string;
   desc: string;
+  href?: string;
 }
 
-export function ProjectCard({ img, title, desc }: ProjectCardProps) {
+export function ProjectCard({ img, title, desc, href = "#" }: ProjectCardProps) {
   return (
     <>
       <Card color="transparent" shadow={false} placeholder={"undefined"}>
@@ -33,7 +34,9 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         </CardHeader>
         <CardBody className="p-0" placeholder={"undefined"}>
           <a
-            href="#"
+            href={href}
+            target={href !== "#" ? "_blank" : undefined}
+            rel={href !== "#" ? "noopener noreferrer" : undefined}
             className="text-blue-gray-900 transition-colors hover:text-gray-800"
           >
             <Typography variant="h5" className="mb-2" placeholder={"undefined"}>
