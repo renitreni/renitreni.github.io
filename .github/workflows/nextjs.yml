@@ -69,6 +69,16 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
+      - name: Copy _redirects file
+        run: |
+          if [ -f public/_redirects ]; then
+            cp public/_redirects out/_redirects
+          fi
+      - name: Copy .nojekyll file
+        run: |
+          if [ -f public/.nojekyll ]; then
+            cp public/.nojekyll out/.nojekyll
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
