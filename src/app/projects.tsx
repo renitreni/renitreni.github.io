@@ -12,42 +12,42 @@ type ProjectEntry = {
 
 const PROJECTS: ProjectEntry[] = [
   {
-    img: "/portfolio/health-insurance/1-member-gateway.png",
+    img: "/project-screenshots/health-insurance/1-member-gateway.png",
     title: "Member Gateway for Health Insurance",
     desc: "Member Gateway also streamlines the claims process, allowing users to submit and track claims in real-time, reducing paperwork and administrative hassles. Additionally, members can seamlessly communicate with insurance providers, ask questions, and receive timely assistance, fostering a transparent and supportive relationship between insurers and policyholders.",
   },
   {
-    img: "/portfolio/government/1-dmw.png",
+    img: "/project-screenshots/government/1-dmw.png",
     title: "Embassy Portal",
     desc: "The Official Embassy Portal serves as the digital gateway to connect citizens, visitors, and stakeholders with embassy services and information, fostering efficient communication and enhancing diplomatic relations. Through this portal, users can access a wide range of essential services and resources, including visa applications, consular assistance, cultural events, and travel advisories.",
   },
   {
-    img: "/portfolio/corporate/1-bondeed.png",
+    img: "/project-screenshots/corporate/1-bondeed.png",
     title: "Corporate Community Website",
     desc: "A centralized digital hub for fostering engagement, collaboration, and communication within a company's community of employees, partners, and stakeholders. It provides a platform for sharing information, resources, and updates relevant to the organization's mission, values, and initiatives.",
   },
   {
-    img: "/portfolio/government/1-ksa-appointment.png",
+    img: "/project-screenshots/government/1-ksa-appointment.png",
     title: "Appointment System",
     desc: "Digital platform designed to streamline the process of scheduling appointments, managing bookings, and optimizing resource allocation for businesses and service providers across various industries. This system leverages advanced technology to enhance efficiency, convenience, and customer satisfaction while reducing administrative burdens and minimizing scheduling conflicts.",
   },
   {
-    img: "/portfolio/education/1-nemsu.png",
+    img: "/project-screenshots/education/1-nemsu.png",
     title: "School Management System",
     desc: "Tailored to meet the diverse needs of educational institutions, facilitating seamless administration, communication, and collaboration among stakeholders including administrators, teachers, students, and parents. This system integrates various modules to streamline administrative tasks, enhance academic management, and improve overall efficiency within the school ecosystem.",
   },
   {
-    img: "/portfolio/education/1-nyc.png",
+    img: "/project-screenshots/education/1-nyc.png",
     title: "Learning Management System (LMS)",
     desc: "Digital platform designed to revolutionize the way educational content is delivered, managed, and accessed by learners and instructors. It serves as a comprehensive solution for educational institutions, corporations, and training providers to streamline the administration, delivery, and tracking of learning activities and resources.",
   },
   {
-    img: "/portfolio/ecommerce/1-budget-pet.png",
+    img: "/project-screenshots/ecommerce/1-budget-pet.png",
     title: "E-commerce",
     desc: "An e-commerce website that focuses on pet products. These websites typically feature product listings, shopping cart functionality, secure payment processing, and often include additional features such as customer reviews, order tracking, and personalized recommendations.",
   },
   {
-    img: "/portfolio/beeauty-books/1-beauty-books.png",
+    img: "/project-screenshots/beeauty-books/1-beauty-books.png",
     title: "Beauty Books",
     href: "https://beautybooks.io/",
     desc: "Studio management and booking software made for lash artists—not generic salon software. It helps stylists and salons run day-to-day operations with tailored client profiles and preferences, online booking, waitlists and deposits, payments and retail, analytics, and multi-location support so the business can scale from a solo chair to a team.",
