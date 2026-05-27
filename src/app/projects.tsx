@@ -27,6 +27,11 @@ const PROJECTS: ProjectEntry[] = [
     desc: "A centralized digital hub for fostering engagement, collaboration, and communication within a company's community of employees, partners, and stakeholders. It provides a platform for sharing information, resources, and updates relevant to the organization's mission, values, and initiatives.",
   },
   {
+    img: "/project-screenshots/TMS.png",
+    title: "Transport Management System (TMS)",
+    desc: "A transport management system built to help operators scale fleet activity without adding operational drag. It unifies planning and execution with integrations that keep back-office, dispatch, and yard systems in sync, while dashboards and job-level detail give teams clear visibility into status, locations, and exceptions. Mobile-first driver flows support accepting assignments, following pickup and delivery instructions, and staying aligned with dispatch—so the business can coordinate port, depot, and over-the-road work from a single control surface, wherever people are working.",
+  },
+  {
     img: "/project-screenshots/government/1-ksa-appointment.png",
     title: "Appointment System",
     desc: "Digital platform designed to streamline the process of scheduling appointments, managing bookings, and optimizing resource allocation for businesses and service providers across various industries. This system leverages advanced technology to enhance efficiency, convenience, and customer satisfaction while reducing administrative burdens and minimizing scheduling conflicts.",
